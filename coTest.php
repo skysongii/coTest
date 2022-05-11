@@ -74,50 +74,28 @@
 //     }
 // }
 
-// var string = new Array();
-// string[0] = '이식의트다림 부';
-// string[1] = '문화코문';
-// string[2] = '제사딩제정 드문';
-// string[3] = '는다테입보피초제';
-// string[4] = '주돌스니올아동';
+var string = new Array();
+string[0] = '이식의트다림 부';
+string[1] = '문화코문';
+string[2] = '제사딩제정 드문';
+string[3] = '는다테입보피초제';
+string[4] = '주돌스니올아등';
+
+var temp_str = '';
+
+for (j=0; j<8; j++) {
+    for(i=0; i<5; i++) {
+        if(!!string[i][j] == false) {
+            continue;
+        } else {
+            temp_str += string[i][j];
+        }
+    }
+}
+temp_str = temp_str.replace(/ /g,"");
+document.write(temp_str);
 
 
-// var new_string = new Array();
-// new_string.push(['a']);
-// var sum = 0;
-// for(i=0; i<string.length; i++) {
-//     var index = string[i].length;
-//     sum += index;
-// }
-// console.log(sum);
-
-
-// for(i=0; i<sum; i++) {
-//     for(j=0; j<8; j++) {
-//         if(string[j][i]=='undefined' || string[j][i]=='') {
-//             continue;
-//         }
-//     }
-//     console.log(string[j][i]);
-// }
-
-// var test = string.toString();
-// console.log(test);
-// const fs = require('fs');
-
-// let input = string.toString().trim().split('\n');
-
-// const turnCnt = Math.max(...input.map((i) => i.length));
-
-// let ans = '';
-
-// for (let i = 0; i < turnCnt; i++) {
-//   for (let j = 0; j < input.length; j++) {
-//     ans += input[j][i] || '';
-//   }
-// }
-
-// console.log(ans);
 
 // var today = function() {
 //     var d = new Date();
